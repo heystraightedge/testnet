@@ -65,4 +65,4 @@ git push
 ```
 
 7. Open a PR to this repo with your gentx
-8. Prepare to run a validating node at genesis time
+8. Submit by January 11, 2020 at 12:00 UTC.
