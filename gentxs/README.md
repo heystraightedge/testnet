@@ -49,11 +49,11 @@ strd gentx \
   --name <key_name>
 ```
 
-**NOTE:**  If you would like to override the memo field use the `--ip` and `--node-id` flags for the `strd gentx` command above. `pubkey` can be obtained using `strd tendermint show-validator`
+**NOTE:**  If you would like to override the memo field use the `--ip` and `--node-id` flags for the `strd gentx` command above. `pubkey` can be obtained using `strd tendermint show-validator`.  Your amount must be less than your genesis allocation which can be seen using `grep -A 6 <your address> genesis.json`
 
 This will produce a file in the `~/.strd/config/gentx/` folder that has a name with the format `gentx-<node_id>.json`.
 
-5. Rename the gentx file to `<validator-moniker>-gentx.json`
+5. Rename the gentx file to `gentx-<validator-moniker>.json`
 6. Fork and clone this repo and copy you gentx file into the gentx folder
   
 ```sh
