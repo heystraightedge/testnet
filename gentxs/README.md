@@ -9,7 +9,7 @@ This document includes instructions for validators who intend to participate in 
 
 #### Prepare Software
 
-1. Install `strd` version v0.0.1
+1. Install `strd` branch `wasm`
 
 ##### Requires Go 1.13+
 
