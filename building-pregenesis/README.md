@@ -7,3 +7,5 @@ If you wish to verify the generation of [pregenesis.json](../pregenesis.json) yo
 3. Install the [straightedge-lockdrop](https://github.com/heystraightedge/straightedge-lockdrop) software and follow setup instructions.
 4. Generate [balances.json](building-genesis/balances.json) by running `node ./scripts/lockdrop.js --allocation`.  This constructs the file using on-chain data from Ethereum.  Note that an Ethereum archival node is neccesary for this step.
 5. Use `strd import-lockdrop-balances astr balances.json` to populate genesis with lockdrop balances.
+
+This should be equivalent to [pregenesis.json](../pregenesis.json).
