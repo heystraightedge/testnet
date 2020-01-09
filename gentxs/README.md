@@ -2,15 +2,16 @@
 
 This document includes instructions for validators who intend to participate in the launch of the Straightedge mainnet. Please note:
 
+1. You must have a genesis allocation in the Straightedge mainnet, meaning you must have participated in the Edgeware Lockdrop according to the [modified Straightedge rules](https://medium.com/straightedge/on-the-straightedge-genesis-block-d073e78b9b02).
 1. This process is intended for technically inclined people who have participated in other `cosmos-sdk` based blockchain launches. Experience running production IT systems is strongly recommended.
 2. STR staked during genesis will be at risk of 5% slashing if your validator double signs. If you accidentally misconfigure your validator setup, this can easily happen, and slashed STR are not expected to be recoverable by any means. Additionally, if you double-sign, your validator will be tombstoned and you will be required to change operator and signing keys.
 3. You will be creating public key accounts that are restored via their mnemonic. It is vital that you securely backup and store your mnemonic for any accounts that are created during this process. **Failure to do so can result in the irrecoverable loss of all STR tokens**.
 
 #### Prepare Software
 
-1. Install `strd` version v0.0.1
+1. Install `strd` branch `wasm`
 
-##### Requires Go 1.13+
+##### Requires Go 1.13+ and gcc
 
 ```sh
 git clone https://github.com/heystraightedge/straightedge
