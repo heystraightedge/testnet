@@ -17,7 +17,6 @@ This document includes instructions for validators who intend to participate in 
 git clone https://github.com/heystraightedge/straightedge
 cd straightedge
 git checkout wasm
-sed -i 's/LEDGER_ENABLED ?= true/LEDGER_ENABLED ?= false/' Makefile
 make install
 strd init <your-validator-moniker>
 ```
