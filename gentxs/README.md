@@ -65,4 +65,4 @@ git push
 ```
 
 7. Open a PR to this repo with your gentx
-8. Submit by January 11, 2020 at 12:00 UTC.
+8. Submit by January 11, 2020 at 12:00pm UTC.
