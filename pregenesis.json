@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2020-01-11T12:00:00Z",
+  "genesis_time": "2020-01-12T12:00:00Z",
   "chain_id": "test-chain-CMrJlF",
   "consensus_params": {
     "block": {

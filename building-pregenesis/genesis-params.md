@@ -2,11 +2,11 @@
 
 ## Tendermint Params
 
-Set genesis time to January 11, 2020 at 12:00pm UTC time.
+Set genesis time to January 12, 2020 at 12:00pm UTC time.
 Set chain id to `straightedge-testnet-1`.
 
 ```json
-    "genesis_time": "2020-01-11T12:00:00.00000Z",
+    "genesis_time": "2020-01-12T12:00:00.00000Z",
     "chain_id": "straightedge-testnet-1",
 ```
 
