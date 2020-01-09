@@ -11,7 +11,7 @@ This document includes instructions for validators who intend to participate in 
 
 1. Install `strd` branch `wasm`
 
-##### Requires Go 1.13+
+##### Requires Go 1.13+ and gcc
 
 ```sh
 git clone https://github.com/heystraightedge/straightedge
