@@ -1,6 +1,6 @@
 # Straightedge GenTxs
 
-This document includes instructions for validators who intend to participate in the launch of the Straightedge mainnet. Please note:
+This document includes instructions for validators who intend to participate in the launch of the Straightedge testnet. Please note:
 
 1. You must have a genesis allocation in the Straightedge mainnet, meaning you must have participated in the Edgeware Lockdrop according to the [modified Straightedge rules](https://medium.com/straightedge/on-the-straightedge-genesis-block-d073e78b9b02).
 1. This process is intended for technically inclined people who have participated in other `cosmos-sdk` based blockchain launches. Experience running production IT systems is strongly recommended.
