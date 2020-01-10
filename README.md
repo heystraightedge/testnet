@@ -30,7 +30,7 @@ For instructions on how to add your lockdrop keys to the Straightedge CLI wallet
 
 You must have a balance in the genesis file to participate as a genesis validator.  Instructions for submitting genesis transactions can be found [here](./gentxs/README.md).
 
-## Recreating Preenesis
+## Recreating Pre-Genesis
 
 If you wish to verify the generation of [pregenesis.json](pregenesis.json) yourself, follow the steps [here](building-pregenesis/README.md).
 
