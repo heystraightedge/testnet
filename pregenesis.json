@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2020-01-12T12:00:00Z",
+  "genesis_time": "2020-02-23T12:00:00.00000Z",
   "chain_id": "straightedge-testnet-1",
   "consensus_params": {
     "block": {
@@ -8,8 +8,7 @@
       "time_iota_ms": "1000"
     },
     "evidence": {
-      "max_age_num_blocks": "1000000",
-      "max_age_duration": "1814400000000000"
+      "max_age": "1000000"
     },
     "validator": {
       "pub_key_types": [
@@ -19,7 +18,74 @@
   },
   "app_hash": "",
   "app_state": {
+    "upgrade": {},
     "params": null,
+    "supply": {
+      "supply": []
+    },
+    "router": {
+      "disabled_routes": ["wasm"]
+    },
+    "genutil": {
+      "gentxs": []
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": [
+          {
+            "amount": "500000000000000000000000000",
+            "denom": "astr"
+          }
+        ]
+      },
+      "community_tax": "0.050000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "evidence": {
+      "params": {
+        "max_evidence_age": "1814400000000000"
+      },
+      "evidence": []
+    },
+    "crisis": {
+      "constant_fee": {
+          "denom": "astr",
+          "amount": "50000000000000000000000"
+      }
+    },
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "astr",
+            "amount": "5000000000000000000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
     "staking": {
       "params": {
         "unbonding_time": "1814400000000000",
@@ -36,32 +102,8 @@
       "redelegations": null,
       "exported": false
     },
-    "evidence": {
-      "params": {
-        "max_evidence_age": "1814400000000000"
-      },
-      "evidence": []
-    },
-    "upgrade": {},
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "astr",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "5256000"
-      }
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "astr",
-        "amount": "50000000000000000000000"
-      }
+    "bank": {
+      "send_enabled": true
     },
     "auth": {
       "params": {
@@ -67989,58 +68031,23 @@
         }
       ]
     },
-    "genutil": {
-      "gentxs": null
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "astr",
-            "amount": "5000000000000000000000"
-          }
-        ],
-        "max_deposit_period": "172800000000000"
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
       },
-      "voting_params": {
-        "voting_period": "172800000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
+      "params": {
+        "mint_denom": "astr",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "5256000"
       }
     },
-    "distribution": {
-      "params": {
-        "community_tax": "0.050000000000000000",
-        "base_proposer_reward": "0.010000000000000000",
-        "bonus_proposer_reward": "0.040000000000000000",
-        "withdraw_addr_enabled": true
-      },
-      "fee_pool": {
-        "community_pool": [
-          {
-            "amount": "500000000000000000000000000",
-            "denom": "astr"
-          }
-        ]
-      },
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
-    },
-    "bank": {
-      "send_enabled": true
+    "wasm": {
+      "codes": null,
+      "contracts": null
     },
     "slashing": {
       "params": {
@@ -68052,18 +68059,6 @@
       },
       "signing_infos": {},
       "missed_blocks": {}
-    },
-    "wasm": {
-      "codes": null,
-      "contracts": null
-    },
-    "supply": {
-      "supply": []
-    },
-    "router": {
-      "disabled_routes": [
-        "wasm"
-      ]
     }
   }
 }

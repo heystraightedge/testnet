@@ -16,7 +16,6 @@ This document includes instructions for validators who intend to participate in 
 ```sh
 git clone https://github.com/heystraightedge/straightedge
 cd straightedge
-git checkout wasm
 make install
 strd init <your-validator-moniker>
 ```
