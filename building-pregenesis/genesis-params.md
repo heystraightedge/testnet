@@ -20,7 +20,8 @@ These parameters are the same as cosmoshub-3.
       "time_iota_ms": "1000"
     },
     "evidence": {
-      "max_age": "1000000"
+      "max_age_num_blocks": "1000000",
+      "max_age_duration": "1814400000000000"
     },
     "validator": {
       "pub_key_types": [
