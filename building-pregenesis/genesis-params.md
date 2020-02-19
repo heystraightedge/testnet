@@ -142,6 +142,12 @@ These parameters are the same as cosmoshub-3, except:
 
 ```json
     "distribution": {
+      "params": {
+        "community_tax": "0.020000000000000000",
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "withdraw_addr_enabled": true
+      },
       "fee_pool": {
         "community_pool": [
           {
@@ -150,10 +156,6 @@ These parameters are the same as cosmoshub-3, except:
           }
         ]
       },
-      "community_tax": "0.050000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": true,
       "delegator_withdraw_infos": [],
       "previous_proposer": "",
       "outstanding_rewards": [],
