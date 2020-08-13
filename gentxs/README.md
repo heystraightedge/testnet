@@ -9,7 +9,7 @@ This document includes instructions for validators who intend to participate in 
 
 #### Prepare Software
 
-1. Install `strd` branch `wasm`
+1. Install `strd` branch `master`
 
 ##### Requires Go 1.13+ and gcc
 
