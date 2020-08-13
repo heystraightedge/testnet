@@ -44,11 +44,15 @@ For the testnet, we will start with the `wasm` routes disabled.
 
 ### Wasm
 
-The wasm module will start with no codes or contracts.
+The wasm module will be permissionless.
 ```json
     "wasm": {
-      "codes": null,
-      "contracts": null
+      "params": {
+        "code_upload_access": {
+          "permission": "Everybody"
+        },
+        "instantiate_default_permission": "Everybody"
+      }
     },
 ```
 
@@ -91,19 +95,11 @@ Crisis fee is 50000 STR.
 
 ```json
     "crisis": {
-        "constant_fee": {
-            "denom": "astr",
-            "amount": "50000000000000000000000"
-        }
+      "constant_fee": {
+          "denom": "astr",
+          "amount": "50000000000000000000000"
+      }
     },
-```
-
-### Params
-
-`params` has no genesis state
-
-```json
-    "params": null
 ```
 
 ### Auth
@@ -137,13 +133,13 @@ Start with sends enabled.
 
 These parameters are the same as cosmoshub-3, except:
 
-- The community pool tax is set to 5%
+- The community pool tax is set to 10%
 - The community pool is initiated with 10% of the initial supply - 500000000 STR (the equivalent of the Founders Reward from Edgeware).  This is intended to be distributed by governance as a reward to the individuals and entities who aided in the launch of the network.
 
 ```json
     "distribution": {
       "params": {
-        "community_tax": "0.020000000000000000",
+        "community_tax": "0.100000000000000000",
         "base_proposer_reward": "0.010000000000000000",
         "bonus_proposer_reward": "0.040000000000000000",
         "withdraw_addr_enabled": true
@@ -255,6 +251,7 @@ Supply starts off empty.  It will automatically be updated later once chain star
 These parameters are the same as cosmohub-3, except:
 
 - `block_per_year` is calculated from testnet 3000 block time (365*24*60*60 seconds/year / 6 seconds/block = 5256000 blocks/year) ref: [https://github.com/cosmos/cosmos-sdk/issues/2846](https://github.com/cosmos/cosmos-sdk/issues/2846)
+- `mint_denom` is `astr`
 
 ```json
     "mint": {
