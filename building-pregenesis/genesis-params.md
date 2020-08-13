@@ -1,4 +1,4 @@
-# Kava Mainnet Genesis Parameters
+# Straightedge Testnet Genesis Parameters
 
 ## Tendermint Params
 
